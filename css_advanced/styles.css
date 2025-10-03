@@ -1,0 +1,538 @@
+/* SmileSchool Website Styles */
+/* CSS Advanced Project */
+
+/* ===== CSS RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== CSS VARIABLES ===== */
+:root {
+    --primary-color: #C271FF;
+    --secondary-color: #071629;
+    --accent-color: #FF6565;
+    --text-color: #071629;
+    --white: #FFFFFF;
+    --light-gray: #F2F2F2;
+    --font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* ===== GENERAL STYLES ===== */
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* ===== HEADER STYLES ===== */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 35px 0;
+}
+
+nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav img {
+    width: 167px;
+    height: 32px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 41px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    opacity: 0.9;
+}
+
+/* ===== HERO SECTION STYLES ===== */
+.hero {
+    background: linear-gradient(180deg, rgba(41, 48, 61, 0.0001) 0%, #071629 74.68%), url('assets/Object.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 1093px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+}
+
+.hero-content {
+    margin-bottom: 162px;
+}
+
+.hero-content h1 {
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 151px;
+    margin-bottom: 40px;
+}
+
+.keywords {
+    display: flex;
+    gap: 79px;
+    margin-bottom: 38px;
+    justify-content: center;
+}
+
+.keywords span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.cta-button {
+    background: var(--primary-color);
+    border: none;
+    border-radius: 22px;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 13px 31px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: inherit;
+}
+
+.cta-button:hover {
+    opacity: 0.9;
+}
+
+.instructors h2 {
+    color: var(--primary-color);
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 103px;
+}
+
+.instructor-grid {
+    display: flex;
+    gap: 58px;
+    justify-content: center;
+    max-width: 1009px;
+}
+
+.instructor-card {
+    text-align: center;
+    width: 150px;
+}
+
+.instructor-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 26px;
+}
+
+.instructor-card h3 {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 4px;
+}
+
+.instructor-card p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: italic;
+}
+
+/* ===== TESTIMONIAL SECTION STYLES ===== */
+.testimonial {
+    background: linear-gradient(99.66deg, #9D50BB 0%, #6596FF 100%);
+    padding: 160px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 94px;
+    color: var(--white);
+}
+
+.testimonial-image img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-content {
+    max-width: 730px;
+}
+
+.testimonial-content blockquote {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    border: none;
+    padding: 0;
+    background: transparent;
+}
+
+.testimonial-content h3 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    margin-bottom: 4px;
+}
+
+.testimonial-content p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    font-style: italic;
+}
+
+/* ===== TUTORIALS SECTION STYLES ===== */
+.tutorials {
+    background: var(--white);
+    padding: 87px 0 106px;
+    text-align: center;
+}
+
+.tutorials h2 {
+    color: var(--secondary-color);
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 92px;
+}
+
+.tutorials h2 span,
+.tutorials h2 {
+    color: var(--secondary-color);
+}
+
+/* Make "popular" purple */
+.tutorials h2::after {
+    content: "";
+}
+
+.tutorial-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    max-width: 1228px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.tutorial-card {
+    width: 255px;
+    text-align: left;
+}
+
+.tutorial-card img {
+    width: 255px;
+    height: 154px;
+    border-radius: 4px;
+    object-fit: cover;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.tutorial-card h3 {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+.tutorial-card p {
+    color: rgba(7, 22, 41, 0.5);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.tutorial-author {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 15px;
+}
+
+.tutorial-author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-bottom: 0;
+}
+
+.tutorial-author h4 {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+.tutorial-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+}
+
+.stars i {
+    color: var(--primary-color);
+    font-size: 15px;
+}
+
+.duration {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 27px;
+    margin: 0;
+}
+/* Remove the existing .tutorial-card img rule and replace with: */
+.video-thumbnail {
+    position: relative; /* This is crucial! */
+    width: 255px;
+    height: 154px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+}
+
+/* Play button overlay */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2; /* Ensure it's above the image */
+}
+
+.play-button:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Purple triangle play icon */
+.play-icon {
+    width: 0;
+    height: 0;
+    border-left: 12px solid var(--primary-color);
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    margin-left: 3px;
+}
+
+/* ===== MEMBERSHIP SECTION STYLES ===== */
+.membership {
+    background: var(--secondary-color);
+    padding: 70px 0 88px;
+    text-align: center;
+    color: var(--white);
+}
+
+.membership h2 {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 65px;
+
+}
+
+.membership-benefits {
+    display: flex;
+    gap: 58px;
+    justify-content: center;
+    max-width: 1006px;
+    margin: 0 auto 87px;
+    padding: 0 20px;
+}
+
+.benefit-card {
+    width: 207px;
+    text-align: center;
+}
+
+.benefit-icon {
+    margin-bottom: 26px;
+}
+
+.benefit-icon i {
+    color: var(--primary-color);
+    font-size: 94px;
+}
+
+.benefit-card h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 13px;
+}
+
+.benefit-card p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    opacity: 0.8;
+}
+/* ===== FAQ SECTION STYLES ===== */
+.faq {
+    background: var(--white);
+    padding: 67px 0 83px;
+    text-align: center;
+}
+
+.faq h2 {
+    color: var(--secondary-color);
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 75px;
+    margin-bottom: 80px;
+}
+
+.faq-container {
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    max-width: 920px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-column {
+    width: 350px;
+}
+
+.faq-item {
+    margin-bottom: 40px;
+}
+
+.faq-item:last-child {
+    margin-bottom: 0;
+}
+
+.faq-item h3 {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.faq-item p {
+    color: rgba(7, 22, 41, 0.5);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/* ===== FOOTER STYLES ===== */
+footer {
+    background: var(--secondary-color);
+    padding: 40px 0 39px;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 39px;
+}
+
+.footer-info img {
+    width: 167px;
+    height: 32px;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+}
+
+.social-media a {
+    color: var(--white);
+    font-size: 30px;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.social-media a:hover {
+    opacity: 0.7;
+}
+
+.smile-logo {
+    display: flex
+}
+
+.smile.logo img {
+    width: 5px;
+    height: 10px
+}
+
+footer p {
+    color: var(--white);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    opacity: 0.35;
+}
